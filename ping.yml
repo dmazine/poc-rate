@@ -1,0 +1,11 @@
+config:
+  target: "http://localhost:8080"
+  phases:
+    - arrivalRate: 20
+      duration: 2
+scenarios:
+  - name: Create record
+    flow:
+      - get:
+          url: "/ping"
+
